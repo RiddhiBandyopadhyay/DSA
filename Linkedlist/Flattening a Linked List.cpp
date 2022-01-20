@@ -88,26 +88,7 @@ int main(void) {
 	}
 	return 0;
 }
-// } Driver Code Ends
 
-/* Node structure  used in the program
-
-struct Node{
-	int data;
-	struct Node * next;
-	struct Node * bottom;
-	
-	Node(int x){
-	    data = x;
-	    next = NULL;
-	    bottom = NULL;
-	}
-	
-};
-*/
-
-/*  Function which returns the  root of 
-    the flattened linked list. */
 Node *merge(Node* a, Node* b){
     Node *temp = new Node(0);
     Node *res = temp;
@@ -133,7 +114,6 @@ Node *merge(Node* a, Node* b){
 
 Node *flatten(Node *root)
 {
-   // Your code here
     if(!root or !root->next)
         return root;
    
